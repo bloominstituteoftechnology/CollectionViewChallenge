@@ -13,6 +13,9 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     var reuseIdentifier = "cell"
     var images: [UIImage] = []
     
+    var names: [String] = ["The Old Violin","Seascape at Port-en-Bessin, Normandy","Pont Neuf, Paris","The Japanese Footbridge","At the Water's Edge","The Impasto Technique of Rembrandt","Vincent van Gogh", "Green Wheat Fields, Auvers", "The Dancing Couple", "Olive Orchard", "Farmhouse in Provence", "Niagara"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
@@ -49,6 +52,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell else {fatalError("no cell. oops")}
         
         cell.imageView.image = images[indexPath.row]
+        cell.nameOutlet.text = names[indexPath.row]
         return cell
     }
     

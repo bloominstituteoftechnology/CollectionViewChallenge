@@ -12,26 +12,50 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CollectionViewCell" customModule="CollectionViewChallenge" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="585" height="381"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="vl5-UQ-f1O">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Wyi-na-9BN">
+                    <rect key="frame" x="0.0" y="0.0" width="585" height="381"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="996" verticalHuggingPriority="996" translatesAutoresizingMaskIntoConstraints="NO" id="vl5-UQ-f1O">
+                            <rect key="frame" x="0.0" y="0.0" width="585" height="353"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TUw-y2-aT8">
+                            <rect key="frame" x="271.5" y="356" width="42" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="4yH-D9-8Ym"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="TUw-y2-aT8" firstAttribute="centerX" secondItem="Wyi-na-9BN" secondAttribute="centerX" id="KO7-XR-cGr"/>
+                        <constraint firstItem="TUw-y2-aT8" firstAttribute="top" secondItem="vl5-UQ-f1O" secondAttribute="bottom" constant="8" id="Mdr-HZ-TmB"/>
+                        <constraint firstAttribute="bottom" secondItem="TUw-y2-aT8" secondAttribute="bottom" id="Nhq-cd-aGL"/>
+                        <constraint firstItem="TUw-y2-aT8" firstAttribute="top" secondItem="vl5-UQ-f1O" secondAttribute="bottom" constant="8" id="VfP-rk-4JV"/>
+                        <constraint firstAttribute="trailing" secondItem="vl5-UQ-f1O" secondAttribute="trailing" id="ejy-AE-31g"/>
+                        <constraint firstItem="vl5-UQ-f1O" firstAttribute="top" secondItem="Wyi-na-9BN" secondAttribute="top" id="tzf-LZ-EaA"/>
+                        <constraint firstItem="vl5-UQ-f1O" firstAttribute="leading" secondItem="Wyi-na-9BN" secondAttribute="leading" id="wnR-U3-R4T"/>
+                    </constraints>
+                </stackView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vl5-UQ-f1O" secondAttribute="trailing" id="ZTh-Yg-O4A"/>
-                <constraint firstItem="vl5-UQ-f1O" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="mmI-Ml-F9U"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vl5-UQ-f1O" secondAttribute="bottom" id="nRR-VK-swB"/>
-                <constraint firstItem="vl5-UQ-f1O" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="t1e-z1-4DP"/>
+                <constraint firstItem="Wyi-na-9BN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="NKP-aw-vUW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wyi-na-9BN" secondAttribute="trailing" id="Q8U-eo-OZc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Wyi-na-9BN" secondAttribute="bottom" id="RwS-z0-Sfw"/>
+                <constraint firstItem="Wyi-na-9BN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="elm-xs-LZn"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="imageView" destination="vl5-UQ-f1O" id="ggI-LV-5y9"/>
+                <outlet property="nameOutlet" destination="TUw-y2-aT8" id="RUx-4a-8Z0"/>
             </connections>
-            <point key="canvasLocation" x="134" y="110"/>
+            <point key="canvasLocation" x="301.60000000000002" y="-19.340329835082461"/>
         </view>
     </objects>
 </document>
