@@ -22,6 +22,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             guard let image = UIImage(named: "Image\(i)") else {return}
             images.append(image)
         }
+        
+        collectionView?.allowsMultipleSelection = true
 
     }
     
@@ -51,6 +53,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     }
     
     
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         // Fetch image
@@ -66,6 +70,9 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         return CGSize(width: image.size.width * scale, height: image.size.height * scale)
     }
     
+
     
+
     
+
 }
