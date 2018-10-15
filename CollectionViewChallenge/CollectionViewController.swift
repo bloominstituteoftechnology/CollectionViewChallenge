@@ -14,6 +14,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             guard let image = UIImage(named: "Image\(i)") else { return }
             images.append(image)
             }
+        collectionView?.allowsMultipleSelection = true
     }
     
     let targetDimension: CGFloat = 320
@@ -26,8 +27,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         let insetAmount: CGFloat = 32
         layout.minimumLineSpacing = .greatestFiniteMagnitude
         layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
-        layout.itemSize = CGSize(width: 80, height: 80)
-        layout.headerReferenceSize = CGSize(width: collectionView.bounds.width, height: 32)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -36,6 +35,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell else {fatalError("No Cell")}
+        
         cell.imageView.image = images[indexPath.row]
         return cell
     }
@@ -51,9 +51,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         guard let cell = collectionView.cellForItem(at: indexPath) else {return}
         cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.green.cgColor
-        
-    }
-
-
+        }
 }
 
