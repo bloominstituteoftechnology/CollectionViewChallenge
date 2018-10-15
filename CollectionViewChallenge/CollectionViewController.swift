@@ -18,15 +18,18 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         super.viewDidLoad()
         let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
-        
+      
+        // Load Images
         for i in 1...12 {
             guard let image = UIImage(named: "Image\(i)") else {return}
             images.append(image)
         }
+        collectionView?.allowsMultipleSelection = true
     
         // paralell array [0...11]
     }
     
+    // Set up layout
     let targetDimension: CGFloat = 320
     
     
@@ -43,4 +46,27 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         layout.scrollDirection = .horizontal
         
     }
+    
+    // Set up Datasource
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell else {fatalError("Cell is not Available")}
+        cell.image.image = images[indexPath.row]
+        cell.layer.borderWidth = 1.3
+        cell.layer.borderColor = UIColor.yellow.cgColor
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath)  -> CGSize {
+        let image = images[indexPath.row]
+        let maxDimension = max(image.size.width, image.size.height)
+        let scale = targetDimension / maxDimension
+        return CGSize(width: image.size.width * scale, height: image.size.height * scale)
+        
+        
+    }
+    
 }

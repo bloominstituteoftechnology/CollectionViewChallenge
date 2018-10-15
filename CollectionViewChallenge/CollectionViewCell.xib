@@ -30,7 +30,6 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="image" destination="mRg-Wg-1Bu" id="fhT-gg-V1n"/>
-                <outlet property="imageView" destination="mRg-Wg-1Bu" id="Kxf-6M-jBq"/>
             </connections>
             <point key="canvasLocation" x="132.80000000000001" y="109.29535232383809"/>
         </view>
