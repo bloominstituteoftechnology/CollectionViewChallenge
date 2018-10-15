@@ -8,12 +8,14 @@
 
 import UIKit
 
-class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, SelectedCellDelegate {
+    
     
     var reuseIdentifier = "cell"
     var images: [UIImage] = []
     
     var names: [String] = ["The Old Violin","Seascape at Port-en-Bessin, Normandy","Pont Neuf, Paris","The Japanese Footbridge","At the Water's Edge","The Impasto Technique of Rembrandt","Vincent van Gogh", "Green Wheat Fields, Auvers", "The Dancing Couple", "Olive Orchard", "Farmhouse in Provence", "Niagara"]
+    
     
     
     override func viewDidLoad() {
@@ -27,7 +29,13 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         }
         
         collectionView?.allowsMultipleSelection = true
+        SelectedCell.shared.delegate = self
 
+
+    }
+    
+    func updateTitle() {
+         self.navigationItem.title = "\(SelectedCell.shared.selected)"
     }
     
     let targetDimension: CGFloat = 320
@@ -44,6 +52,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         layout.scrollDirection = .horizontal
     }
     
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
@@ -55,7 +64,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         cell.nameOutlet.text = names[indexPath.row]
         return cell
     }
-    
     
     
     
@@ -73,10 +81,14 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         // Return scaled dimensions
         return CGSize(width: image.size.width * scale, height: image.size.height * scale)
     }
-    
 
     
-
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        SelectedCell.shared.plusSelected()
+    }
     
+    override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        SelectedCell.shared.lessSelected()
+    }
 
 }
