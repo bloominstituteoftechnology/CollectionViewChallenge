@@ -10,6 +10,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     let insetAmount: CGFloat = 32
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
         
@@ -29,7 +30,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
         layout.minimumLineSpacing = .greatestFiniteMagnitude
-        layout.scrollDirection = .vertical
+        layout.scrollDirection = .horizontal
         
     }
     
@@ -41,7 +42,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell else {
             fatalError("Inconsistent view state")
         }
-        
+        cell.imageView.image = images[indexPath.row]
         return cell
     }
     
