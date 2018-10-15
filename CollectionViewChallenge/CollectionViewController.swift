@@ -12,24 +12,19 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         for i in 1...12 {
             guard let image = UIImage(named: "Image\(i)") else { return }
-            //let painting = UIImage(named: "Image\(i)")
             images.append(image)
             }
-    
-        collectionView?.allowsMultipleSelection = true
-    
     }
     
     let targetDimension: CGFloat = 320
     let insertAmount: CGFloat = 32
-    let maxDimension = 1000
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {fatalError("unable to retrieve layout")}
         
         let insetAmount: CGFloat = 32
-        
+        layout.minimumLineSpacing = .greatestFiniteMagnitude
         layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
         layout.itemSize = CGSize(width: 80, height: 80)
         layout.headerReferenceSize = CGSize(width: collectionView.bounds.width, height: 32)
@@ -50,13 +45,15 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         let maxDimension = max(image.size.width, image.size.height)
         let scale = targetDimension / maxDimension
         return CGSize(width: image.size.width * scale, height: image.size.height * scale)
-//    }
-//
-//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        guard let cell = collectionView.cellForItem(at: indexPath) else {return}
-//        cell.layer.borderWidth = 1
-//        cell.layer.borderColor = UIColor.yellow.cgColor
     }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) else {return}
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.green.cgColor
+        
+    }
+
 
 }
 
