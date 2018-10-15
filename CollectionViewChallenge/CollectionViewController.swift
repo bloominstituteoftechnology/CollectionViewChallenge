@@ -4,6 +4,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     let reuseIdentifier = "cell"
     var images: [UIImage] = []
+    var names: [String] = ["The Old Violin","Seascape at Port-en-Bessin, Normandy","Pont Neuf, Paris","The Japanese Footbridge","At the Water's Edge","The Impasto Technique of Rembrandt","Vincent van Gogh", "Green Wheat Fields, Auvers", "The Dancing Couple", "Olive Orchard", "Farmhouse in Provence", "Niagara"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -13,6 +14,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             guard let image = UIImage(named: ("Image\(numbers)")) else { return }
             images.append(image)
         }
+        collectionView?.allowsMultipleSelection = true
     }
     
     let targetDimension: CGFloat = 320
@@ -33,8 +35,16 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell else {fatalError("Inconsistent view state")}
         cell.imageView.image = images[indexPath.row]
+        cell.name.text = names[indexPath.row]
+        //cell.layer.borderWidth = 1
         return cell
     }
+    
+//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        guard let cell = collectionView.cellForItem(at: indexPath) else {return}
+//        cell.layer.borderWidth = 1
+//        cell.layer.borderColor = UIColor.yellow.cgColor
+//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
