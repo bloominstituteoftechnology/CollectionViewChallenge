@@ -15,10 +15,13 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             //let painting = UIImage(named: "Image\(i)")
             images.append(image)
             }
-        }
+    
+        collectionView?.allowsMultipleSelection = true
+    
+    }
     
     let targetDimension: CGFloat = 320
-    //let insetAmount: CGFloat = 32
+    let insertAmount: CGFloat = 32
     let maxDimension = 1000
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,14 +47,9 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath)  -> CGSize {
         let image = images[indexPath.row]
-        let maxDiminsion = max(image.size.width, image.size.height)
-      
-   
-    
-
+        let maxDimension = max(image.size.width, image.size.height)
         let scale = targetDimension / maxDimension
-        
-         return CGSize(width: image.size.width * scale, height: image.size.height * scale)
+        return CGSize(width: image.size.width * scale, height: image.size.height * scale)
 //    }
 //
 //    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
