@@ -11,8 +11,8 @@
         <!--Collection View Controller-->
         <scene sceneID="jzI-NW-NZc">
             <objects>
-                <collectionViewController id="ZEk-PO-NfI" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dmA-N1-kYJ" customClass="CollectoinViewController">
+                <collectionViewController id="ZEk-PO-NfI" customClass="CollectionViewController" customModule="CollectionViewChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dmA-N1-kYJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
