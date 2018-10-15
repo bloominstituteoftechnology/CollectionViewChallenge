@@ -1,6 +1,6 @@
 import UIKit
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let reuseIdentifier = "cell"
     var images: [UIImage] = []
@@ -17,13 +17,13 @@ class CollectionViewController: UICollectionViewController {
     
     let targetDimension: CGFloat = 320
     
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {fatalError("Unable to retrieve layout")}
         let insetAmount: CGFloat = 32
         layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
         layout.minimumLineSpacing = .greatestFiniteMagnitude
+        layout.scrollDirection = .horizontal
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -33,7 +33,6 @@ class CollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell else {fatalError("Inconsistent view state")}
         cell.imageView.image = images[indexPath.row]
-        
         return cell
     }
     
