@@ -1,6 +1,6 @@
 import UIKit
 
-class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, SelectedCellDelegate {
     
     let reuseIdentifier = "cell"
     var images: [UIImage] = []
@@ -15,6 +15,15 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             images.append(image)
         }
         collectionView?.allowsMultipleSelection = true
+        //var randomNumber = Int.random(in: 1...12)
+//        self.navigationItem.title = names[randomNumber]
+        SelectedCell.shared.delegate = self
+        
+    }
+    
+    func updateTitle() {
+        let selectedCount = SelectedCell.shared.selected
+        self.navigationItem.title = "\(selectedCount)"
     }
     
     let targetDimension: CGFloat = 320
@@ -59,5 +68,13 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         // Return scaled dimensions
         return CGSize(width: image.size.width * scale, height: image.size.height * scale)
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        SelectedCell.shared.plusSelected()
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        SelectedCell.shared.lessSelected()
     }
 }
