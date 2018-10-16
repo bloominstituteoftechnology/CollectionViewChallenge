@@ -13,6 +13,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         super.viewDidLoad()
         let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
+         collectionView.allowsMultipleSelection = true
         
         
         for numbers in 1...12 {
