@@ -6,4 +6,10 @@
 //  Copyright © 2018 Erica Sadun. All rights reserved.
 //
 
-import Foundation
+
+import UIKit
+
+class CollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var imageView: UIImageView!
+}
