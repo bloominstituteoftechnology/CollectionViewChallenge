@@ -3,6 +3,8 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     
     override var isSelected: Bool{
         didSet{

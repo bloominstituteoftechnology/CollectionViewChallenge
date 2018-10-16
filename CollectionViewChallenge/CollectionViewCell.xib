@@ -15,21 +15,38 @@
             <rect key="frame" x="0.0" y="0.0" width="353" height="315"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-2j-Kie">
-                    <rect key="frame" x="0.0" y="20" width="381" height="652"/>
-                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-vu-tDt">
+                    <rect key="frame" x="0.0" y="20" width="353" height="260"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-2j-Kie">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="240"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JE1-aG-e2g">
+                            <rect key="frame" x="0.0" y="240" width="353" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="JE1-aG-e2g" firstAttribute="trailing" secondItem="lNq-2j-Kie" secondAttribute="trailing" id="7LF-ui-0Fv"/>
+                        <constraint firstItem="JE1-aG-e2g" firstAttribute="top" secondItem="Kmn-vu-tDt" secondAttribute="top" constant="240" id="r1k-lI-ABa"/>
+                        <constraint firstAttribute="trailing" secondItem="lNq-2j-Kie" secondAttribute="trailing" id="sre-Gd-l4E"/>
+                    </constraints>
+                </stackView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lNq-2j-Kie" secondAttribute="trailing" id="JTg-hM-KIi"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lNq-2j-Kie" secondAttribute="bottom" id="QuZ-F9-Pbn"/>
-                <constraint firstItem="lNq-2j-Kie" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qGP-Dk-y4w"/>
-                <constraint firstItem="lNq-2j-Kie" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="upG-Hf-jbv"/>
+                <constraint firstAttribute="bottom" secondItem="Kmn-vu-tDt" secondAttribute="bottom" constant="35" id="BBo-9g-Zoo"/>
+                <constraint firstItem="Kmn-vu-tDt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gkZ-bP-W0Q"/>
+                <constraint firstAttribute="trailing" secondItem="Kmn-vu-tDt" secondAttribute="trailing" id="iBw-4r-9d6"/>
+                <constraint firstItem="Kmn-vu-tDt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" symbolic="YES" id="oTT-am-c7j"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="imageView" destination="lNq-2j-Kie" id="GLR-Yb-UWh"/>
+                <outlet property="titleLabel" destination="JE1-aG-e2g" id="lLi-t5-EDm"/>
             </connections>
             <point key="canvasLocation" x="120.8" y="-5.8470764617691158"/>
         </view>

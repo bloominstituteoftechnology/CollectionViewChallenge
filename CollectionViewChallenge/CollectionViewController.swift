@@ -6,6 +6,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     let reuseIdentifier = "cell"
     
+     var names: [String] = ["The Old Violin","Seascape at Port-en-Bessin, Normandy","Pont Neuf, Paris","The Japanese Footbridge","At the Water's Edge","The Impasto Technique of Rembrandt","Vincent van Gogh", "Green Wheat Fields, Auvers", "The Dancing Couple", "Olive Orchard", "Farmhouse in Provence", "Niagara"]
+    
     let targetDimension: CGFloat = 320
     let insetAmount: CGFloat = 32
     
@@ -44,6 +46,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             fatalError("Inconsistent view state")
         }
         cell.imageView.image = images[indexPath.row]
+        cell.titleLabel.text = names[indexPath.row]
         return cell
     }
     
