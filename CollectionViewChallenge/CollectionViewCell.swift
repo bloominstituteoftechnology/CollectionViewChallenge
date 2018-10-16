@@ -13,7 +13,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet var imageVIew: UIImageView!
     
     
-    
+    @IBOutlet weak var label: UILabel!
     
     
     

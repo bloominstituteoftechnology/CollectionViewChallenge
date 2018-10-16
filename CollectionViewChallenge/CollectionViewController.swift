@@ -11,6 +11,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     let reuseIndetifier = "cell"
     var images: [UIImage] = []
+    var names: [String] = ["The Old Violin","Seascape at Port-en-Bessin, Normandy","Pont Neuf, Paris","The Japanese Footbridge","At the Water's Edge","The Impasto Technique of Rembrandt","Vincent van Gogh", "Green Wheat Fields, Auvers", "The Dancing Couple", "Olive Orchard", "Farmhouse in Provence", "Niagara"]
+    
     
     override func viewDidLoad() {
         let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
@@ -21,6 +23,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             guard UIImage(named: image) != nil else {return}
             let painting = UIImage(named: image)
             images.append(painting!)
+            
+            collectionView?.allowsMultipleSelection = true
         }
         
         
@@ -61,6 +65,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         }
         
         cell.imageVIew.image = self.images[indexPath.row]
+        cell.label.text = self.names[indexPath.row]
         
         
         cell.isSelected = true
