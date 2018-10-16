@@ -18,7 +18,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     }
     
     let targetDimension: CGFloat = 320
-    let insertAmount: CGFloat = 32
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -52,5 +52,9 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.green.cgColor
         }
+    override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) else {return}
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.black.cgColor
+    }
 }
-
