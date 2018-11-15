@@ -9,5 +9,19 @@
 import UIKit
 
 class CollectionViewController: UICollectionViewController{
+    var images: [UIImage] = []
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidLoad()
+        
+        for index in 1...12 {
+            guard let image = UIImage(named: "Image\(index)") else {return}
+            images.append(image)
+        }
+    }
+    
+    
+    
+    
     
 }
