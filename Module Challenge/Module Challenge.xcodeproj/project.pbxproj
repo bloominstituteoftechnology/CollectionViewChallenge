@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		A597A890219E0EEF0069B9D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A88F219E0EEF0069B9D2 /* AppDelegate.swift */; };
-		A597A892219E0EEF0069B9D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A891219E0EEF0069B9D2 /* ViewController.swift */; };
 		A597A895219E0EEF0069B9D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A597A893219E0EEF0069B9D2 /* Main.storyboard */; };
 		A597A897219E0EF00069B9D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A597A896219E0EF00069B9D2 /* Assets.xcassets */; };
 		A597A89A219E0EF00069B9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A597A898219E0EF00069B9D2 /* LaunchScreen.storyboard */; };
 		A597A8A2219E0F140069B9D2 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A8A1219E0F140069B9D2 /* CollectionViewController.swift */; };
 		A597A8A4219E0F220069B9D2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A8A3219E0F220069B9D2 /* CollectionViewCell.swift */; };
 		A597A8A6219E0F410069B9D2 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A597A8A5219E0F410069B9D2 /* CollectionViewCell.xib */; };
+		A597A8AB219E28C60069B9D2 /* LambdaLogoAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A597A8AA219E28C60069B9D2 /* LambdaLogoAssets.xcassets */; };
+		A597A8AD219E28D70069B9D2 /* PaintingAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A597A8AC219E28D70069B9D2 /* PaintingAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A597A88C219E0EEF0069B9D2 /* Module Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Module Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A597A88F219E0EEF0069B9D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A597A891219E0EEF0069B9D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A597A894219E0EEF0069B9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A597A896219E0EF00069B9D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A597A899219E0EF00069B9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +28,8 @@
 		A597A8A1219E0F140069B9D2 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		A597A8A3219E0F220069B9D2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A597A8A5219E0F410069B9D2 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		A597A8AA219E28C60069B9D2 /* LambdaLogoAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = LambdaLogoAssets.xcassets; path = ../../CollectionViewChallenge/LambdaLogoAssets.xcassets; sourceTree = "<group>"; };
+		A597A8AC219E28D70069B9D2 /* PaintingAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PaintingAssets.xcassets; path = ../../CollectionViewChallenge/PaintingAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +66,10 @@
 				A597A8A1219E0F140069B9D2 /* CollectionViewController.swift */,
 				A597A8A3219E0F220069B9D2 /* CollectionViewCell.swift */,
 				A597A8A5219E0F410069B9D2 /* CollectionViewCell.xib */,
-				A597A891219E0EEF0069B9D2 /* ViewController.swift */,
 				A597A893219E0EEF0069B9D2 /* Main.storyboard */,
 				A597A896219E0EF00069B9D2 /* Assets.xcassets */,
+				A597A8AA219E28C60069B9D2 /* LambdaLogoAssets.xcassets */,
+				A597A8AC219E28D70069B9D2 /* PaintingAssets.xcassets */,
 				A597A898219E0EF00069B9D2 /* LaunchScreen.storyboard */,
 				A597A89B219E0EF00069B9D2 /* Info.plist */,
 			);
@@ -131,6 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A597A8AD219E28D70069B9D2 /* PaintingAssets.xcassets in Resources */,
+				A597A8AB219E28C60069B9D2 /* LambdaLogoAssets.xcassets in Resources */,
 				A597A89A219E0EF00069B9D2 /* LaunchScreen.storyboard in Resources */,
 				A597A897219E0EF00069B9D2 /* Assets.xcassets in Resources */,
 				A597A8A6219E0F410069B9D2 /* CollectionViewCell.xib in Resources */,
@@ -146,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A597A8A2219E0F140069B9D2 /* CollectionViewController.swift in Sources */,
-				A597A892219E0EEF0069B9D2 /* ViewController.swift in Sources */,
 				A597A8A4219E0F220069B9D2 /* CollectionViewCell.swift in Sources */,
 				A597A890219E0EEF0069B9D2 /* AppDelegate.swift in Sources */,
 			);
