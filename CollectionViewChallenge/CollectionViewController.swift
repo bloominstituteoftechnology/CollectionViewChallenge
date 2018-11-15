@@ -13,11 +13,12 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     var images: [UIImage] = []
     let targetDimension: CGFloat = 320
     let insetAmount: CGFloat = 32
+    let imagecount: Int = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for index in 1...12 {
+        for index in 1...imagecount {
             guard let image = UIImage(named: "Image\(index)") else {return}
             images.append(image)
         }
