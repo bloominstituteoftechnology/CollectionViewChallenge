@@ -13,6 +13,9 @@
 		8EA6BDDF2174E39D0071AF47 /* PaintingAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDDE2174E39D0071AF47 /* PaintingAssets.xcassets */; };
 		8EA6BDE22174E3A90071AF47 /* LambdaLogoAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDE02174E3A90071AF47 /* LambdaLogoAssets.xcassets */; };
 		8EA6BDE32174E3A90071AF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDE12174E3A90071AF47 /* LaunchScreen.storyboard */; };
+		AB20306B219E13B1009C0E89 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20306A219E13B1009C0E89 /* CollectionViewController.swift */; };
+		AB20306D219E13C1009C0E89 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20306C219E13C1009C0E89 /* CollectionViewCell.swift */; };
+		AB20306F219E13EF009C0E89 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB20306E219E13EF009C0E89 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		8EA6BDDE2174E39D0071AF47 /* PaintingAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PaintingAssets.xcassets; sourceTree = "<group>"; };
 		8EA6BDE02174E3A90071AF47 /* LambdaLogoAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LambdaLogoAssets.xcassets; sourceTree = "<group>"; };
 		8EA6BDE12174E3A90071AF47 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB20306A219E13B1009C0E89 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		AB20306C219E13C1009C0E89 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		AB20306E219E13EF009C0E89 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */,
+				AB20306A219E13B1009C0E89 /* CollectionViewController.swift */,
+				AB20306C219E13C1009C0E89 /* CollectionViewCell.swift */,
+				AB20306E219E13EF009C0E89 /* CollectionViewCell.xib */,
 				8EA6BDD02174E38A0071AF47 /* Main.storyboard */,
 				8EA6BDD32174E38B0071AF47 /* Assets.xcassets */,
 				8EA6BDDE2174E39D0071AF47 /* PaintingAssets.xcassets */,
-				8EA6BDD82174E38B0071AF47 /* Info.plist */,
 				8EA6BDE02174E3A90071AF47 /* LambdaLogoAssets.xcassets */,
 				8EA6BDE12174E3A90071AF47 /* LaunchScreen.storyboard */,
+				8EA6BDD82174E38B0071AF47 /* Info.plist */,
 			);
 			path = CollectionViewChallenge;
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 			files = (
 				8EA6BDDF2174E39D0071AF47 /* PaintingAssets.xcassets in Resources */,
 				8EA6BDD42174E38B0071AF47 /* Assets.xcassets in Resources */,
+				AB20306F219E13EF009C0E89 /* CollectionViewCell.xib in Resources */,
 				8EA6BDE22174E3A90071AF47 /* LambdaLogoAssets.xcassets in Resources */,
 				8EA6BDE32174E3A90071AF47 /* LaunchScreen.storyboard in Resources */,
 				8EA6BDD22174E38A0071AF47 /* Main.storyboard in Resources */,
@@ -140,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB20306B219E13B1009C0E89 /* CollectionViewController.swift in Sources */,
 				8EA6BDCD2174E38A0071AF47 /* AppDelegate.swift in Sources */,
+				AB20306D219E13C1009C0E89 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
