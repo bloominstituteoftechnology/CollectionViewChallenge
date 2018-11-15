@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		481D6FA1219E1E3C00A9A8CF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D6FA0219E1E3C00A9A8CF /* CollectionViewController.swift */; };
+		481D6FA3219E1E9200A9A8CF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D6FA2219E1E9200A9A8CF /* CollectionViewCell.swift */; };
 		8EA6BDCD2174E38A0071AF47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */; };
 		8EA6BDD22174E38A0071AF47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDD02174E38A0071AF47 /* Main.storyboard */; };
 		8EA6BDD42174E38B0071AF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDD32174E38B0071AF47 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		481D6FA0219E1E3C00A9A8CF /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		481D6FA2219E1E9200A9A8CF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		8EA6BDC92174E38A0071AF47 /* CollectionViewChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EA6BDD12174E38A0071AF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */,
 				481D6FA0219E1E3C00A9A8CF /* CollectionViewController.swift */,
+				481D6FA2219E1E9200A9A8CF /* CollectionViewCell.swift */,
 				8EA6BDD02174E38A0071AF47 /* Main.storyboard */,
 				8EA6BDD32174E38B0071AF47 /* Assets.xcassets */,
 				8EA6BDDE2174E39D0071AF47 /* PaintingAssets.xcassets */,
@@ -145,6 +148,7 @@
 			files = (
 				481D6FA1219E1E3C00A9A8CF /* CollectionViewController.swift in Sources */,
 				8EA6BDCD2174E38A0071AF47 /* AppDelegate.swift in Sources */,
+				481D6FA3219E1E9200A9A8CF /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
