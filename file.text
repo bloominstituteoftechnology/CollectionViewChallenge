@@ -1,0 +1,9 @@
+1. A collection view controller is like a table view controller, but instead of displaying objects in linear rows it displays objects in a variety of different ways.
+
+2. You use a TVC when you want to display objects in a set, linear fashion in portrait view. If you want an app to display items in a way pleasing to the user and you want to display them in landscape view or in any non-linear view, then it would be better to use CVC.
+
+3.There are no differences in the data source methods.
+
+4. One interface that you would not be able to build with TVCs would be an interface used in the LDS Gospel Library app. When you click on a Standard Work in the app it takes you to a view that lists all of the chapters starting side-by-side and then starting a new row when space in the view runs out. I think that a TVC would be preferably when you need to present the user with information in a linear, logical order, if that is the only purpose of the app.
+
+5. You use sections when you want cells that present different types of data. Instead of cloning cells over and over again in a section, you create a new cell that appears in a new section. The section allows you to provide a logical separation of content.
