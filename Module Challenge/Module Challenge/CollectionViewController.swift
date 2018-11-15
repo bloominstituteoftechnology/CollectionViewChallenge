@@ -5,34 +5,38 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     var images: [UIImage] = []
     override func viewDidLoad() {
      super.viewDidLoad()
+        let headernib = UINib(nibName: "CollectionViewCell", bundle: nil)
+        collectionView.register(headernib, forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
         
     for number in 1...12 {
     let name = "Image\(number)"
         guard let image = UIImage(named: name) else {fatalError("Image not exist")}
         
     images.append(image)
-        return
         }
-    
-         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    }
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseIdentifier, for: indexPath) as? CollectionViewCell else { fatalError("Error")}
+            cell.imageView.image = images[indexPath.row]
             return cell
         }
-             func viewDidLoad() {
-                super.viewDidLoad()
-                reloadInputViews()
-                
-            guard let layout = collectionViewLayout as? UICollectionViewFlowLayout else {
-                fatalError("Unable to retrieve layout")}
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return images.count }
         
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    
+    guard let layout = collectionViewLayout as? UICollectionViewFlowLayout else {
+    fatalError("Unable to retrieve layout")}
         
-        let targetDimension: CGFloat = 320
+      
         let insetAmount: CGFloat = 32
         
         layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
             layout.minimumLineSpacing = .greatestFiniteMagnitude
             layout.scrollDirection = .horizontal
-       
+    }
+      let targetDimension: CGFloat = 320
                 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
@@ -48,9 +52,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         // Return scaled dimensions
         return CGSize(width: image.size.width * scale, height: image.size.height * scale) }
     }
-     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count }
-    }
-}
+    
+
+
 
 
