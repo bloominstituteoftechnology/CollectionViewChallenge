@@ -12,12 +12,8 @@ import UIKit
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var images: [UIImage] = []
-    var targetDimension: CGFloat = 320
-    var insetAmount: CGFloat = 32
-    
-    
-    
-    
+    var targetDimension: CGFloat = 320                                  // Set up the layout
+    var insetAmount: CGFloat = 32                                       // Set up the layout
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +29,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         // UICollectionViewDelegateFlowLayout, is that at the top of the class?
         // is it in the class body? Does it make a difference?
         // self.collectionView.delegate = self
-        
+    
+        // Set up the layout
         override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
             guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
@@ -41,7 +38,19 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
             layout.minimumLineSpacing = .greatestFiniteMagnitude
             layout.scrollDirection = .horizontal
-            
         }
+    
+    
+    // Set up the data source
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseIdentifier, for: indexPath) as? CollectionViewCell else {fatalError("Error")}
+        
+        cell.imageView?.image = images[indexPath.row]
+        return cell
+    }
     
 }
