@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +24,31 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <cells/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="7Bt-Jc-40Q" customClass="CollectionViewCell" customModule="CollectionViewChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-UN-siP">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qaZ-UN-siP" secondAttribute="trailing" id="5of-vB-MFP"/>
+                                    <constraint firstItem="qaZ-UN-siP" firstAttribute="leading" secondItem="7Bt-Jc-40Q" secondAttribute="leading" id="JKW-sm-sGt"/>
+                                    <constraint firstItem="qaZ-UN-siP" firstAttribute="top" secondItem="7Bt-Jc-40Q" secondAttribute="top" id="fUN-3r-RJm"/>
+                                    <constraint firstAttribute="bottom" secondItem="qaZ-UN-siP" secondAttribute="bottom" id="jGv-4c-HTI"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="xGb-jW-rny"/>
+                                <connections>
+                                    <outlet property="imageView" destination="qaZ-UN-siP" id="7o2-vk-hkI"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
                         <connections>
                             <outlet property="dataSource" destination="BEq-XY-PGx" id="TSp-dW-pDl"/>
                             <outlet property="delegate" destination="BEq-XY-PGx" id="g3H-if-yru"/>
@@ -31,7 +56,7 @@
                     </collectionView>
                 </collectionViewController>
             </objects>
-            <point key="canvasLocation" x="-343" y="186"/>
+            <point key="canvasLocation" x="-175" y="116"/>
         </scene>
     </scenes>
 </document>
