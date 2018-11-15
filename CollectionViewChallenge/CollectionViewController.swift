@@ -1,6 +1,7 @@
 import UIKit
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
     let reuseIdentifier = "cell"
     var images: [UIImage] = []
     
@@ -15,4 +16,19 @@ class CollectionViewController: UICollectionViewController {
             images.append(image)
         }
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {return}
+        
+        let insetAmount: CGFloat = 32
+        let targetDimensions: CGFloat = 320
+        
+        layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
+        layout.minimumLineSpacing = .greatestFiniteMagnitude
+    }
+    
+
 }
