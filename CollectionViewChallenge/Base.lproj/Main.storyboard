@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,32 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <cells/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="HDF-7b-Rwa" customClass="CollectionViewCell" customModule="CollectionViewChallenge" customModuleProvider="target">
+                                <rect key="frame" x="8" y="0.0" width="359" height="398"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="398"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="I8T-Fg-kAy">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="398"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="I8T-Fg-kAy" secondAttribute="bottom" id="fdG-us-JuK"/>
+                                    <constraint firstItem="I8T-Fg-kAy" firstAttribute="top" secondItem="HDF-7b-Rwa" secondAttribute="top" id="hnb-ML-J0N"/>
+                                    <constraint firstItem="I8T-Fg-kAy" firstAttribute="leading" secondItem="HDF-7b-Rwa" secondAttribute="leading" id="kc3-iC-zhl"/>
+                                    <constraint firstAttribute="trailing" secondItem="I8T-Fg-kAy" secondAttribute="trailing" id="wh6-8c-3c3"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="klS-kl-DAm"/>
+                                <size key="customSize" width="359" height="398"/>
+                                <connections>
+                                    <outlet property="collectionViewImageCell" destination="I8T-Fg-kAy" id="dFk-36-L4F"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
                         <connections>
                             <outlet property="dataSource" destination="nLw-ee-Wlt" id="zGe-Zz-18v"/>
                             <outlet property="delegate" destination="nLw-ee-Wlt" id="DoV-xI-Mgo"/>

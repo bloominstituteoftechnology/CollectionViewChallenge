@@ -62,15 +62,15 @@
 		8EA6BDCB2174E38A0071AF47 /* CollectionViewChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */,
+				8EA6BDD02174E38A0071AF47 /* Main.storyboard */,
 				F8820F0C219E1D1A002794C5 /* CollectionViewController.swift */,
 				F8820F0E219E1D25002794C5 /* CollectionViewCell.swift */,
 				F8820F10219E1D34002794C5 /* CollectionViewCell.xib */,
-				8EA6BDD02174E38A0071AF47 /* Main.storyboard */,
 				8EA6BDD32174E38B0071AF47 /* Assets.xcassets */,
 				8EA6BDDE2174E39D0071AF47 /* PaintingAssets.xcassets */,
 				8EA6BDD82174E38B0071AF47 /* Info.plist */,
 				8EA6BDE02174E3A90071AF47 /* LambdaLogoAssets.xcassets */,
+				8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */,
 				8EA6BDE12174E3A90071AF47 /* LaunchScreen.storyboard */,
 			);
 			path = CollectionViewChallenge;
