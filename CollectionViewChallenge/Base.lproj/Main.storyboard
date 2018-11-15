@@ -38,8 +38,12 @@
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="SNf-Uj-xf6" secondAttribute="bottom" id="3Pp-N3-2tz"/>
+                                    <constraint firstItem="SNf-Uj-xf6" firstAttribute="top" secondItem="jG0-wX-59G" secondAttribute="top" id="D3A-Lr-d9J"/>
+                                    <constraint firstAttribute="trailing" secondItem="SNf-Uj-xf6" secondAttribute="trailing" id="I5k-6E-qwf"/>
+                                    <constraint firstAttribute="bottom" secondItem="SNf-Uj-xf6" secondAttribute="bottom" id="IAH-FJ-eIX"/>
                                     <constraint firstItem="SNf-Uj-xf6" firstAttribute="top" secondItem="jG0-wX-59G" secondAttribute="top" id="gRo-17-nVR"/>
                                     <constraint firstAttribute="trailing" secondItem="SNf-Uj-xf6" secondAttribute="trailing" id="oqd-f0-WjU"/>
+                                    <constraint firstItem="SNf-Uj-xf6" firstAttribute="leading" secondItem="jG0-wX-59G" secondAttribute="leading" id="pfR-yh-rPs"/>
                                     <constraint firstItem="SNf-Uj-xf6" firstAttribute="leading" secondItem="jG0-wX-59G" secondAttribute="leading" id="z8w-eY-U0T"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="Ujl-ud-pDm"/>
