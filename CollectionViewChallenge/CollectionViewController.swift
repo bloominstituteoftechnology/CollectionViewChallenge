@@ -66,4 +66,13 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         // Return scaled dimensions
         return CGSize(width: image.size.width * scale, height: image.size.height * scale)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = collectionView.indexPathsForSelectedItems else {return}
+        guard let destination = segue.destination as? DetailViewController else {return} // could put fatal errors
+        
+        let image = images[0]
+        
+        destination.image = image
+    }
 }
