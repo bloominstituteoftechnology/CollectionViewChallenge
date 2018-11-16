@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController{
     
+    static let reuseIdentifier = "cell"
     weak var image: UIImage?
     @IBOutlet weak var imageView: UIImageView!
     

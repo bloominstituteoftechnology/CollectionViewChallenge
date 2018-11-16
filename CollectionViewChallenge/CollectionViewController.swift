@@ -68,10 +68,12 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         guard let indexPath = collectionView.indexPathsForSelectedItems else {return}
+        
         guard let destination = segue.destination as? DetailViewController else {return} // could put fatal errors
         
-        let image = images[0]
+        let image = images[indexPath[0].row]
         
         destination.image = image
     }
