@@ -32,7 +32,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-UN-siP">
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-UN-siP">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         </imageView>
                                     </subviews>
@@ -54,9 +54,10 @@
                             <outlet property="delegate" destination="BEq-XY-PGx" id="g3H-if-yru"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="5lp-uL-xNE"/>
                 </collectionViewController>
             </objects>
-            <point key="canvasLocation" x="-463" y="-28"/>
+            <point key="canvasLocation" x="814" y="-167"/>
         </scene>
     </scenes>
 </document>

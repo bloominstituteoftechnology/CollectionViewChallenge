@@ -33,7 +33,7 @@
             <connections>
                 <outlet property="imageView" destination="2sC-oH-Dhl" id="smk-2a-Pci"/>
             </connections>
-            <point key="canvasLocation" x="85" y="105"/>
+            <point key="canvasLocation" x="84.799999999999997" y="104.34782608695653"/>
         </collectionViewCell>
     </objects>
 </document>
