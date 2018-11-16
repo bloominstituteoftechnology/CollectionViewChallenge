@@ -54,6 +54,9 @@
                             <outlet property="delegate" destination="nLw-ee-Wlt" id="DoV-xI-Mgo"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <outlet property="paintingImageView" destination="I8T-Fg-kAy" id="wid-bU-A7F"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L4J-kH-qs2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
