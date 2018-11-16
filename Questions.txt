@@ -1,0 +1,10 @@
+A collection view controller is controls a particular collection view.
+
+A TVC controls table views and CVC controls collection views.
+
+One uses UITableViewDelagate and UITableViewDataSource and the other uses UICollectionViewDelagateFlowLayout.
+
+
+If you want items is a table which is neatly in rows, use a TVC. If you want items to be free flowing and not in rows, use CVC.
+
+You use sections when you have multiple things to display in the row neatly.
