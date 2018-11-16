@@ -59,7 +59,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for i in 1...12 {
+        for i in 1...17 {
             let imageName = "Image\(i)"
             guard let validImage = UIImage(named: imageName) else {fatalError("no such image")}
             images.append(validImage)
