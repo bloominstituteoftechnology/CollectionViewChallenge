@@ -4,25 +4,20 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     var images: [UIImage] = []
     let reuseIdentifier = "UIImage"
-    @IBOutlet var paintingImageView: UIImageView!
+    let targetDimension: CGFloat = 320
+    let insetAmount: CGFloat = 32
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         for counter in 1 ... 12 {
             let paintingName = "Image\(counter)"
-            // if let image = UIImage(named: paintingName) {
             guard let image = UIImage(named: paintingName) else { fatalError("Could not connect to image assets.") }
             images.append(image)
         }
-        // return images ?
         
-
-        
-        
-//        let imageViewNib = UINib(nibName: "CollectionReusableImageView", bundle: nil)
-//
-//        collectionView.register(imageViewNib, withReuseIdentifier: CollectionReusableImageView.reuseIdentifier)
+        let imageViewNib = UINib(nibName: "CollectionViewCell", bundle: nil)
+        collectionView.register(imageViewNib, forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,15 +27,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             fatalError("Unable to retrieve layout")
         }
         
-        // added this
-        let insetAmount: CGFloat = 32
-        let targetDimension: CGFloat = 320
-        
-        // modify below
-        
         layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
-//        layout.itemSize = CGSize(width: 120, height: 120)
-//        layout.headerReferenceSize = CGSize(width: collectionView.bounds.width, height: 32)
         layout.minimumLineSpacing = .greatestFiniteMagnitude
         layout.scrollDirection = .horizontal
         
@@ -59,6 +46,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             fatalError("Unable to dequeue proper cell type")
         }
         
+        cell.collectionViewImageCell.image = images[indexPath.item]
         // somehow set the cell equal to the UIImage
         // cell.collectionViewImageCell = images.index
         
