@@ -10,6 +10,7 @@
 		873985F0219E08BD006F1A5E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873985EF219E08BD006F1A5E /* CollectionViewController.swift */; };
 		873985F2219E08D0006F1A5E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873985F1219E08D0006F1A5E /* CollectionViewCell.swift */; };
 		873985F4219E08EC006F1A5E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873985F3219E08EC006F1A5E /* CollectionViewCell.xib */; };
+		873985F6219E2E1C006F1A5E /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873985F5219E2E1C006F1A5E /* Questions.swift */; };
 		8EA6BDCD2174E38A0071AF47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */; };
 		8EA6BDD22174E38A0071AF47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDD02174E38A0071AF47 /* Main.storyboard */; };
 		8EA6BDD42174E38B0071AF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDD32174E38B0071AF47 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		873985EF219E08BD006F1A5E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		873985F1219E08D0006F1A5E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		873985F3219E08EC006F1A5E /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		873985F5219E2E1C006F1A5E /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		8EA6BDC92174E38A0071AF47 /* CollectionViewChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EA6BDD12174E38A0071AF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */,
 				8EA6BDD02174E38A0071AF47 /* Main.storyboard */,
 				873985EF219E08BD006F1A5E /* CollectionViewController.swift */,
+				873985F5219E2E1C006F1A5E /* Questions.swift */,
 				873985F3219E08EC006F1A5E /* CollectionViewCell.xib */,
 				873985F1219E08D0006F1A5E /* CollectionViewCell.swift */,
 				8EA6BDD32174E38B0071AF47 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873985F0219E08BD006F1A5E /* CollectionViewController.swift in Sources */,
+				873985F6219E2E1C006F1A5E /* Questions.swift in Sources */,
 				8EA6BDCD2174E38A0071AF47 /* AppDelegate.swift in Sources */,
 				873985F2219E08D0006F1A5E /* CollectionViewCell.swift in Sources */,
 			);
