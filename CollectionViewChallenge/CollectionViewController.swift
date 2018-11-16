@@ -21,12 +21,13 @@ class CollectionViewController : UICollectionViewController, UICollectionViewDel
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        for count in 1...12 {
+        for count in 1...16 {
             var imageName = "Image\(count)"
             guard let image = UIImage(named: imageName) else {fatalError("Images failed to load")}
             images.append(image)
         }
     }
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
