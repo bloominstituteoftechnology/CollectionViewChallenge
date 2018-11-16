@@ -13,7 +13,7 @@
         <!--Collection View Controller-->
         <scene sceneID="MRO-U6-Mg9">
             <objects>
-                <collectionViewController id="Cru-Rt-cKU" sceneMemberID="viewController">
+                <collectionViewController id="Cru-Rt-cKU" customClass="CollectionViewController" customModule="Module_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="CollectionViewController" dataMode="prototypes" id="c1Z-9x-vth">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

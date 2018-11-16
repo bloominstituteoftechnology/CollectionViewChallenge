@@ -8,7 +8,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         let headernib = UINib(nibName: "CollectionViewCell", bundle: nil)
         collectionView.register(headernib, forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
         
-    for number in 1...12 {
+    for number in 1...17 {
     let name = "Image\(number)"
         guard let image = UIImage(named: name) else {fatalError("Image not exist")}
         
