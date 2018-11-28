@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="457" height="303"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yCb-AE-PLZ">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="yCb-AE-PLZ">
                         <rect key="frame" x="0.0" y="0.0" width="457" height="303"/>
                     </imageView>
                 </subviews>
@@ -32,6 +32,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="xHD-74-xH6"/>
             <size key="customSize" width="457" height="303"/>
+            <connections>
+                <outlet property="imageView" destination="yCb-AE-PLZ" id="xli-OL-d0c"/>
+            </connections>
             <point key="canvasLocation" x="106" y="96"/>
         </collectionViewCell>
     </objects>
