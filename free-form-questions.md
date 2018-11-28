@@ -6,9 +6,9 @@ A collection view controller is akin to a table view controller, but allows for 
 
 You typically use a table view controller when having stacks of information provided in a typically linear fashion.
 
-A colection view controller is great for displaying things in a more refined way where the application has more control of how much content a user can see at once. 
+A colection view controller is great for displaying things in a more refined way where the application has more control of how much content a user can see at once.
 
-For example, a TVC would be great for a list of hospital patients and their needs, and a CVC would be great for a photo gallery with images of varied sizes in which a user can easily scroll through and then tap on the act upon them. 
+For example, a TVC would be great for a list of hospital patients and their needs, and a CVC would be great for a photo gallery with images of varied sizes in which a user can easily scroll through and then tap on the cells to act upon them. 
 
 # What are the differences in the CVC vs TVC data source methods?
 
@@ -21,7 +21,7 @@ From Apple's documentation on [UICollectionViewDataSource](https://developer.app
 
 You can build interfaces that do not look like a list or table with CVCs, and arrange the items almost however you'd like. TVCs are preferrable for confining elements in a predictable pattern.
 
-### You can make a catalog that can have sections of cells that can be navigated through vertically or horizontally with CVCs (like the Kindle, Netflix app, etc.), or only vertically with a TVC. 
+### More specifically: You can make a catalog that can have sections of cells that can be navigated through vertically or horizontally with CVCs (like the Kindle, Netflix app, etc.), or only vertically with a TVC. 
 
 # When do you use sections to organize table and collection view controllers? What advantages do sections offer?
 
