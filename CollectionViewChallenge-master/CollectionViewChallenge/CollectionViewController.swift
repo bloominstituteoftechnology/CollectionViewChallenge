@@ -42,5 +42,20 @@ class CollectionViewController: UICollectionViewController {
         return cell
     }
     
-    
+    // This method uses the largest dimension of each image to scale to your `targetDimension` extent.
+    // Here's where flexible sizing comes to play. Add the following method to your collection view:
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        // Fetch image
+        let image = paintings[indexPath.row]
+        
+        // Fetch largest dimension of the image, whether width or height
+        let maxDimension = max(image.size.width, image.size.height)
+        
+        // Calculate how to scale that largest dimension into `targetDimension`
+        let scale = targetDimension / maxDimension
+        
+        // Return scaled dimensions
+        return CGSize(width: image.size.width * scale, height: image.size.height * scale)
+    }
 }
