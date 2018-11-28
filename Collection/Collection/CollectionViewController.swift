@@ -1,14 +1,17 @@
 import UIKit
 
-class CollectionViewController: UICollectionViewController, UICollectionViewFlowLayout {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var images: [UIImage] = []
-    
+    let reuseIdentifier = "cell"
     let targetDimension: CGFloat = 320
     let insetAmount: CGFloat = 32
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
         
         for number in 1 ... 12 {
             guard let image = UIImage(named: "Image\(number)") else { return }
