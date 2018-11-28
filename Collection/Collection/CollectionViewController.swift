@@ -15,4 +15,18 @@ class CollectionViewController: UICollectionViewController, UICollectionViewFlow
             images.append(image)
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //retrieve collectionview and casting it
+        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { fatalError("unable to retrieve layout")}
+        
+        //set layout sectionInset using insetAmount
+        layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
+        
+        //set layout minimumLineSpacing to .greatestFiniteMagnitude
+        layout.minimumLineSpacing = .greatestFiniteMagnitude
+    }
 }
+
