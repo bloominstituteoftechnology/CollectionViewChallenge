@@ -13,6 +13,8 @@
 		48C8E62C21AF3C4400A568A1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8E62B21AF3C4400A568A1 /* CollectionViewCell.swift */; };
 		48C8E62E21AF3C5800A568A1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8E62D21AF3C5800A568A1 /* CollectionViewController.swift */; };
 		48C8E63021AF3C7400A568A1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48C8E62F21AF3C7400A568A1 /* CollectionViewCell.xib */; };
+		48F72CB421AF5E97003C72FD /* PaintingAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F72C8B21AF55D7003C72FD /* PaintingAssets.xcassets */; };
+		48F72CB521AF5EE6003C72FD /* LambdaLogoAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F72C8C21AF55D7003C72FD /* LambdaLogoAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +26,9 @@
 		48C8E62B21AF3C4400A568A1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		48C8E62D21AF3C5800A568A1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		48C8E62F21AF3C7400A568A1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		48C8E63121AF53A100A568A1 /* PaintingAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PaintingAssets.xcassets; sourceTree = "<group>"; };
-		48C8E63221AF53CD00A568A1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		48C8E63321AF53CD00A568A1 /* LambdaLogoAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LambdaLogoAssets.xcassets; sourceTree = "<group>"; };
+		48F72C8B21AF55D7003C72FD /* PaintingAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PaintingAssets.xcassets; sourceTree = "<group>"; };
+		48F72C8C21AF55D7003C72FD /* LambdaLogoAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LambdaLogoAssets.xcassets; sourceTree = "<group>"; };
+		48F72C8D21AF55D7003C72FD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +66,10 @@
 				48C8E62F21AF3C7400A568A1 /* CollectionViewCell.xib */,
 				48C8E62D21AF3C5800A568A1 /* CollectionViewController.swift */,
 				48C8E61D21AF3ADC00A568A1 /* Main.storyboard */,
+				48F72C8C21AF55D7003C72FD /* LambdaLogoAssets.xcassets */,
+				48F72C8D21AF55D7003C72FD /* LaunchScreen.storyboard */,
+				48F72C8B21AF55D7003C72FD /* PaintingAssets.xcassets */,
 				48C8E62021AF3ADD00A568A1 /* Assets.xcassets */,
-				48C8E63121AF53A100A568A1 /* PaintingAssets.xcassets */,
-				48C8E63321AF53CD00A568A1 /* LambdaLogoAssets.xcassets */,
-				48C8E63221AF53CD00A568A1 /* LaunchScreen.storyboard */,
 				48C8E62521AF3ADD00A568A1 /* Info.plist */,
 			);
 			path = Collection;
@@ -131,6 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F72CB521AF5EE6003C72FD /* LambdaLogoAssets.xcassets in Resources */,
+				48F72CB421AF5E97003C72FD /* PaintingAssets.xcassets in Resources */,
 				48C8E62121AF3ADD00A568A1 /* Assets.xcassets in Resources */,
 				48C8E63021AF3C7400A568A1 /* CollectionViewCell.xib in Resources */,
 				48C8E61F21AF3ADC00A568A1 /* Main.storyboard in Resources */,
