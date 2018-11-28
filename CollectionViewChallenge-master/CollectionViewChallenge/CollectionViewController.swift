@@ -2,12 +2,15 @@ import UIKit
 
 class CollectionViewController: UICollectionViewController {
     
+    var paintings: [UIImage] = []
+    
     override func viewDidLoad() {
-        var nameArray: [UIImage] = []
+        super.viewDidLoad()
+        
         for counter in 1 ... 12 {
-            let imageName = "image\(counter)"
-            guard let image = UIImage(named: imageName) else { fatalError("No images") }
-                nameArray.append(image)
+            let paintingImageName = "Image\(counter)"
+            guard let image = UIImage(named: paintingImageName) else { fatalError("Could not provide any images from the assets folder.") }
+                paintings.append(image)
             }
     }
     
