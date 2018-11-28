@@ -7,27 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8EA6BDCD2174E38A0071AF47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */; };
-		8EA6BDD22174E38A0071AF47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDD02174E38A0071AF47 /* Main.storyboard */; };
-		8EA6BDD42174E38B0071AF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDD32174E38B0071AF47 /* Assets.xcassets */; };
-		8EA6BDDF2174E39D0071AF47 /* PaintingAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDDE2174E39D0071AF47 /* PaintingAssets.xcassets */; };
-		8EA6BDE22174E3A90071AF47 /* LambdaLogoAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDE02174E3A90071AF47 /* LambdaLogoAssets.xcassets */; };
-		8EA6BDE32174E3A90071AF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6BDE12174E3A90071AF47 /* LaunchScreen.storyboard */; };
+		48C8E61A21AF3ADC00A568A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8E61921AF3ADC00A568A1 /* AppDelegate.swift */; };
+		48C8E61F21AF3ADC00A568A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C8E61D21AF3ADC00A568A1 /* Main.storyboard */; };
+		48C8E62121AF3ADD00A568A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C8E62021AF3ADD00A568A1 /* Assets.xcassets */; };
+		48C8E62C21AF3C4400A568A1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8E62B21AF3C4400A568A1 /* CollectionViewCell.swift */; };
+		48C8E62E21AF3C5800A568A1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8E62D21AF3C5800A568A1 /* CollectionViewController.swift */; };
+		48C8E63021AF3C7400A568A1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48C8E62F21AF3C7400A568A1 /* CollectionViewCell.xib */; };
+		48F72CB421AF5E97003C72FD /* PaintingAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F72C8B21AF55D7003C72FD /* PaintingAssets.xcassets */; };
+		48F72CB521AF5EE6003C72FD /* LambdaLogoAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F72C8C21AF55D7003C72FD /* LambdaLogoAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8EA6BDC92174E38A0071AF47 /* CollectionViewChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EA6BDD12174E38A0071AF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8EA6BDD32174E38B0071AF47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8EA6BDD82174E38B0071AF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EA6BDDE2174E39D0071AF47 /* PaintingAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PaintingAssets.xcassets; sourceTree = "<group>"; };
-		8EA6BDE02174E3A90071AF47 /* LambdaLogoAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LambdaLogoAssets.xcassets; sourceTree = "<group>"; };
-		8EA6BDE12174E3A90071AF47 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48C8E61621AF3ADC00A568A1 /* Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C8E61921AF3ADC00A568A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48C8E61E21AF3ADC00A568A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48C8E62021AF3ADD00A568A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48C8E62521AF3ADD00A568A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C8E62B21AF3C4400A568A1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		48C8E62D21AF3C5800A568A1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		48C8E62F21AF3C7400A568A1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		48F72C8B21AF55D7003C72FD /* PaintingAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PaintingAssets.xcassets; sourceTree = "<group>"; };
+		48F72C8C21AF55D7003C72FD /* LambdaLogoAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LambdaLogoAssets.xcassets; sourceTree = "<group>"; };
+		48F72C8D21AF55D7003C72FD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8EA6BDC62174E38A0071AF47 /* Frameworks */ = {
+		48C8E61321AF3ADC00A568A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +42,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8EA6BDC02174E38A0071AF47 = {
+		48C8E60D21AF3ADC00A568A1 = {
 			isa = PBXGroup;
 			children = (
-				8EA6BDCB2174E38A0071AF47 /* CollectionViewChallenge */,
-				8EA6BDCA2174E38A0071AF47 /* Products */,
+				48C8E61821AF3ADC00A568A1 /* Collection */,
+				48C8E61721AF3ADC00A568A1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8EA6BDCA2174E38A0071AF47 /* Products */ = {
+		48C8E61721AF3ADC00A568A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EA6BDC92174E38A0071AF47 /* CollectionViewChallenge.app */,
+				48C8E61621AF3ADC00A568A1 /* Collection.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8EA6BDCB2174E38A0071AF47 /* CollectionViewChallenge */ = {
+		48C8E61821AF3ADC00A568A1 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
-				8EA6BDCC2174E38A0071AF47 /* AppDelegate.swift */,
-				8EA6BDD02174E38A0071AF47 /* Main.storyboard */,
-				8EA6BDD32174E38B0071AF47 /* Assets.xcassets */,
-				8EA6BDDE2174E39D0071AF47 /* PaintingAssets.xcassets */,
-				8EA6BDD82174E38B0071AF47 /* Info.plist */,
-				8EA6BDE02174E3A90071AF47 /* LambdaLogoAssets.xcassets */,
-				8EA6BDE12174E3A90071AF47 /* LaunchScreen.storyboard */,
+				48C8E61921AF3ADC00A568A1 /* AppDelegate.swift */,
+				48C8E62B21AF3C4400A568A1 /* CollectionViewCell.swift */,
+				48C8E62F21AF3C7400A568A1 /* CollectionViewCell.xib */,
+				48C8E62D21AF3C5800A568A1 /* CollectionViewController.swift */,
+				48C8E61D21AF3ADC00A568A1 /* Main.storyboard */,
+				48F72C8C21AF55D7003C72FD /* LambdaLogoAssets.xcassets */,
+				48F72C8D21AF55D7003C72FD /* LaunchScreen.storyboard */,
+				48F72C8B21AF55D7003C72FD /* PaintingAssets.xcassets */,
+				48C8E62021AF3ADD00A568A1 /* Assets.xcassets */,
+				48C8E62521AF3ADD00A568A1 /* Info.plist */,
 			);
-			path = CollectionViewChallenge;
+			path = Collection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8EA6BDC82174E38A0071AF47 /* CollectionViewChallenge */ = {
+		48C8E61521AF3ADC00A568A1 /* Collection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EA6BDDB2174E38B0071AF47 /* Build configuration list for PBXNativeTarget "CollectionViewChallenge" */;
+			buildConfigurationList = 48C8E62821AF3ADD00A568A1 /* Build configuration list for PBXNativeTarget "Collection" */;
 			buildPhases = (
-				8EA6BDC52174E38A0071AF47 /* Sources */,
-				8EA6BDC62174E38A0071AF47 /* Frameworks */,
-				8EA6BDC72174E38A0071AF47 /* Resources */,
+				48C8E61221AF3ADC00A568A1 /* Sources */,
+				48C8E61321AF3ADC00A568A1 /* Frameworks */,
+				48C8E61421AF3ADC00A568A1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CollectionViewChallenge;
-			productName = CollectionViewChallenge;
-			productReference = 8EA6BDC92174E38A0071AF47 /* CollectionViewChallenge.app */;
+			name = Collection;
+			productName = Collection;
+			productReference = 48C8E61621AF3ADC00A568A1 /* Collection.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8EA6BDC12174E38A0071AF47 /* Project object */ = {
+		48C8E60E21AF3ADC00A568A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Erica Sadun";
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Frulwinn;
 				TargetAttributes = {
-					8EA6BDC82174E38A0071AF47 = {
-						CreatedOnToolsVersion = 10.0;
+					48C8E61521AF3ADC00A568A1 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 8EA6BDC42174E38A0071AF47 /* Build configuration list for PBXProject "CollectionViewChallenge" */;
+			buildConfigurationList = 48C8E61121AF3ADC00A568A1 /* Build configuration list for PBXProject "Collection" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,47 +118,49 @@
 				en,
 				Base,
 			);
-			mainGroup = 8EA6BDC02174E38A0071AF47;
-			productRefGroup = 8EA6BDCA2174E38A0071AF47 /* Products */;
+			mainGroup = 48C8E60D21AF3ADC00A568A1;
+			productRefGroup = 48C8E61721AF3ADC00A568A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8EA6BDC82174E38A0071AF47 /* CollectionViewChallenge */,
+				48C8E61521AF3ADC00A568A1 /* Collection */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8EA6BDC72174E38A0071AF47 /* Resources */ = {
+		48C8E61421AF3ADC00A568A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EA6BDDF2174E39D0071AF47 /* PaintingAssets.xcassets in Resources */,
-				8EA6BDD42174E38B0071AF47 /* Assets.xcassets in Resources */,
-				8EA6BDE22174E3A90071AF47 /* LambdaLogoAssets.xcassets in Resources */,
-				8EA6BDE32174E3A90071AF47 /* LaunchScreen.storyboard in Resources */,
-				8EA6BDD22174E38A0071AF47 /* Main.storyboard in Resources */,
+				48F72CB521AF5EE6003C72FD /* LambdaLogoAssets.xcassets in Resources */,
+				48F72CB421AF5E97003C72FD /* PaintingAssets.xcassets in Resources */,
+				48C8E62121AF3ADD00A568A1 /* Assets.xcassets in Resources */,
+				48C8E63021AF3C7400A568A1 /* CollectionViewCell.xib in Resources */,
+				48C8E61F21AF3ADC00A568A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8EA6BDC52174E38A0071AF47 /* Sources */ = {
+		48C8E61221AF3ADC00A568A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EA6BDCD2174E38A0071AF47 /* AppDelegate.swift in Sources */,
+				48C8E62E21AF3C5800A568A1 /* CollectionViewController.swift in Sources */,
+				48C8E61A21AF3ADC00A568A1 /* AppDelegate.swift in Sources */,
+				48C8E62C21AF3C4400A568A1 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8EA6BDD02174E38A0071AF47 /* Main.storyboard */ = {
+		48C8E61D21AF3ADC00A568A1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8EA6BDD12174E38A0071AF47 /* Base */,
+				48C8E61E21AF3ADC00A568A1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -158,7 +168,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8EA6BDD92174E38B0071AF47 /* Debug */ = {
+		48C8E62621AF3ADD00A568A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -209,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -219,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		8EA6BDDA2174E38B0071AF47 /* Release */ = {
+		48C8E62721AF3ADD00A568A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -274,36 +284,34 @@
 			};
 			name = Release;
 		};
-		8EA6BDDC2174E38B0071AF47 /* Debug */ = {
+		48C8E62921AF3ADD00A568A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2W4DVPEQ39;
-				INFOPLIST_FILE = CollectionViewChallenge/Info.plist;
+				INFOPLIST_FILE = Collection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sadun.CollectionViewChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fru.Collection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8EA6BDDD2174E38B0071AF47 /* Release */ = {
+		48C8E62A21AF3ADD00A568A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2W4DVPEQ39;
-				INFOPLIST_FILE = CollectionViewChallenge/Info.plist;
+				INFOPLIST_FILE = Collection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sadun.CollectionViewChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fru.Collection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,25 +321,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8EA6BDC42174E38A0071AF47 /* Build configuration list for PBXProject "CollectionViewChallenge" */ = {
+		48C8E61121AF3ADC00A568A1 /* Build configuration list for PBXProject "Collection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EA6BDD92174E38B0071AF47 /* Debug */,
-				8EA6BDDA2174E38B0071AF47 /* Release */,
+				48C8E62621AF3ADD00A568A1 /* Debug */,
+				48C8E62721AF3ADD00A568A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EA6BDDB2174E38B0071AF47 /* Build configuration list for PBXNativeTarget "CollectionViewChallenge" */ = {
+		48C8E62821AF3ADD00A568A1 /* Build configuration list for PBXNativeTarget "Collection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EA6BDDC2174E38B0071AF47 /* Debug */,
-				8EA6BDDD2174E38B0071AF47 /* Release */,
+				48C8E62921AF3ADD00A568A1 /* Debug */,
+				48C8E62A21AF3ADD00A568A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8EA6BDC12174E38A0071AF47 /* Project object */;
+	rootObject = 48C8E60E21AF3ADC00A568A1 /* Project object */;
 }
