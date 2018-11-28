@@ -28,5 +28,11 @@ class CollectionViewController: UICollectionViewController, UICollectionViewFlow
         //set layout minimumLineSpacing to .greatestFiniteMagnitude
         layout.minimumLineSpacing = .greatestFiniteMagnitude
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count
+    }
+    
+    
 }
 
