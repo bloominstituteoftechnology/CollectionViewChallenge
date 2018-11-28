@@ -1,8 +1,11 @@
 import UIKit
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UICollectionViewController, UICollectionViewFlowLayout {
 
     var images: [UIImage] = []
+    
+    let targetDimensions: CGFloat = 320
+    let insetAmount: CGFloat = 32
     
     override func viewDidLoad() {
         super.viewDidLoad()
