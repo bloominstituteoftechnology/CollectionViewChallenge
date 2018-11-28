@@ -1,0 +1,24 @@
+What is a collection view controller (CVC)?
+A more advanced table view controller.
+
+When do you use a table view controller (TVC) and when a collection view controller (CVC)?
+Use a table view when displaying one item per section, use a collection view when you have multiple sections 
+
+What are the differences in the CVC vs TVC data source methods?
+A CVC has a nib collectionView and use for SupplementaryViewOfKind instead of cellForRowAt
+
+
+What kinds of interfaces can you build with CVCs that you cannot with TVCs?
+Multiple views in sections along the screen.
+
+
+Under what circumstances are TVCs preferable?
+When you don't need extra ability of CVC.
+
+When do you use sections to organize table and collection view controllers? 
+Before viewDidLoad.
+
+
+What advantages do sections offer?
+Sections allow more data to be shown at once in an organized fashion
+.
