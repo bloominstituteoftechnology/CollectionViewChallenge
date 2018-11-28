@@ -20,6 +20,14 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         super.viewWillAppear(animated)
         
         guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { fatalError("Unable to retrieve the layout.") }
+        
+        //The section insets reflect the spacing at the outer edges of the section
+        // The mimimumLineSpacing is the space between the lines in the section 
+        let insetAmount: CGFloat = 32
+        layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
+        layout.minimumLineSpacing = .greatestFiniteMagnitude
+        layout.scrollDirection = .horizontal
     }
-    let insetAmount: CGFloat = 32
+    
+    
 }
