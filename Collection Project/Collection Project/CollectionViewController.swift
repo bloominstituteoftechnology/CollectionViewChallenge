@@ -29,7 +29,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             fatalError("Unable to retrieve layout")
         }
         
-        layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
+        layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount) fu
         layout.minimumLineSpacing = .greatestFiniteMagnitude
         layout.scrollDirection = .horizontal
     }
