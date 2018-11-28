@@ -62,8 +62,8 @@
 			children = (
 				48C8E61921AF3ADC00A568A1 /* AppDelegate.swift */,
 				48C8E62B21AF3C4400A568A1 /* CollectionViewCell.swift */,
-				48C8E62D21AF3C5800A568A1 /* CollectionViewController.swift */,
 				48C8E62F21AF3C7400A568A1 /* CollectionViewCell.xib */,
+				48C8E62D21AF3C5800A568A1 /* CollectionViewController.swift */,
 				48C8E61B21AF3ADC00A568A1 /* ViewController.swift */,
 				48C8E61D21AF3ADC00A568A1 /* Main.storyboard */,
 				48C8E62021AF3ADD00A568A1 /* Assets.xcassets */,

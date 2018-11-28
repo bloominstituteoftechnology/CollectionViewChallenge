@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="255" height="139"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H6o-wd-cwg">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="H6o-wd-cwg">
                         <rect key="frame" x="0.0" y="0.0" width="255" height="139"/>
                     </imageView>
                 </subviews>
@@ -32,6 +32,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="2df-Dx-3ka"/>
             <size key="customSize" width="255" height="139"/>
+            <connections>
+                <outlet property="paintingView" destination="H6o-wd-cwg" id="cAa-qb-tAZ"/>
+            </connections>
             <point key="canvasLocation" x="304.80000000000001" y="106.59670164917542"/>
         </collectionViewCell>
     </objects>
