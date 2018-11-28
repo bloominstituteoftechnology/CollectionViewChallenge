@@ -4,7 +4,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewFlow
 
     var images: [UIImage] = []
     
-    let targetDimensions: CGFloat = 320
+    let targetDimension: CGFloat = 320
     let insetAmount: CGFloat = 32
     
     override func viewDidLoad() {
@@ -39,5 +39,22 @@ class CollectionViewController: UICollectionViewController, UICollectionViewFlow
         cell.paintingView.image = images[indexPath.row]
         return cell
     }
+    
+    //allows for flexible sizing given in instruction
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        // Fetch image
+        let image = images[indexPath.row]
+        
+        // Fetch largest dimension of the image, whether width or height
+        let maxDimension = max(image.size.width, image.size.height)
+        
+        // Calculate how to scale that largest dimension into `targetDimension`
+        let scale = targetDimension / maxDimension
+        
+        // Return scaled dimensions
+        return CGSize(width: image.size.width * scale, height: image.size.height * scale)
+    }
+    
 }
 
