@@ -1,6 +1,6 @@
 import UIKit
 
-class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class CollectionViewController: UICollectionViewController {
     
     var paintings: [UIImage] = []
     let targetDimension: CGFloat = 320
@@ -28,4 +28,19 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         layout.scrollDirection = .horizontal
         
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return paintings.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseIdentifier, for: indexPath) as? CollectionViewCell
+            else { fatalError("Unable to dequeue proper cell type") }
+        
+        cell.imageView.image = paintings[indexPath.item]
+        
+        return cell
+    }
+    
+    
 }
