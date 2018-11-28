@@ -41,5 +41,20 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        // Fetch image
+        let image = images[indexPath.row]
+        
+        // Fetch largest dimension of the image, whether width or height
+        let maxDimension = max(image.size.width, image.size.height)
+        
+        // Calculate how to scale that largest dimension into `targetDimension`
+        let scale = targetDimension / maxDimension
+        
+        // Return scaled dimensions
+        return CGSize(width: image.size.width * scale, height: image.size.height * scale)
+    }
+    
     
 }
