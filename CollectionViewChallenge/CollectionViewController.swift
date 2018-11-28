@@ -1,10 +1,9 @@
 import UIKit
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     // Array that will hold the images
     var images: [UIImage] = []
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +22,26 @@ class CollectionViewController: UICollectionViewController {
         }
     }
     
+    // Flow properties
+    let targetDimension: CGFloat = 320
+    let insetAmount: CGFloat = 32
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Retrieve the layout and cast it to UICollectionViewFlowLayout
+        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
+            else { fatalError("Unable to retrieve layout") }
+        
+        // Set the inset to 32
+        layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
+        
+        // Set the smallest line spacing to the largest of the all the images
+        layout.minimumLineSpacing = .greatestFiniteMagnitude
+        
+        // Set the direction of the user's scrolling to be swiping horizontally
+        layout.scrollDirection = .horizontal
+        
+    }
     
 }
