@@ -33,6 +33,11 @@ class CollectionViewController: UICollectionViewController, UICollectionViewFlow
         return images.count
     }
     
-    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseIdentifier, for: indexPath) as? CollectionViewCell else { fatalError("Unable to dequeue proper cell")}
+        
+        cell.paintingView.image = images[indexPath.row]
+        return cell
+    }
 }
 
