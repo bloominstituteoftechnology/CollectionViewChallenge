@@ -14,7 +14,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         super.viewDidLoad()
         let imageNib = UINib(nibName: "CollectionViewCell", bundle: nil)
         collectionView.register(imageNib, forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
-        for counter in 1...13 {
+        for counter in 1...16 {
             let imageName = "Image\(counter)"
             if let image = UIImage(named: imageName) {
                 images.append(image)
