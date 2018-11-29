@@ -15,7 +15,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         collectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
         
         // Load 12 images into the image array
-        for counter in 1 ... 12 {
+        for counter in 1 ... 16 {
             
             // Name the images using string interpolation
             let imageName = "Image\(counter)"
