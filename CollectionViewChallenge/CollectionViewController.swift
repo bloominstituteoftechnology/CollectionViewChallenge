@@ -8,6 +8,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
+        
         for values in 1...12 {
             guard let image = UIImage(named: "Image\(values)") else { fatalError("Unable to load the images") }
             images.append(image)
