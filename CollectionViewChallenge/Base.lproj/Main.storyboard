@@ -44,9 +44,6 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="F2e-5t-xd1"/>
                                 <size key="customSize" width="150" height="130"/>
-                                <connections>
-                                    <outlet property="imageView" destination="tzO-zz-UvE" id="jQD-Fv-9Jk"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
