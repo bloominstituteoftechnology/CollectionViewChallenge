@@ -12,4 +12,4 @@ One major difference with the CVC datasource is the support of interactive reord
 **What kinds of interfaces can you build with CVCs that you cannot with TVCs? Under what circumstances are TVCs preferable?** CVC is able to create grid layouts as well as the full width vertical lists, which is the layout that TVC create. CVC may also contain supplementary views.
 
 **When do you use sections to organize table and collection view controllers? What advantages do sections offer?**  
-Sections
+Sections provide the obvious organization of the data displayed in the view controller.  Sections provide a guide for the user to the information being displayed in the view.  This real world presentation provides the all important positive end user experience.
