@@ -19,44 +19,28 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             images.append(image)
         }
         
-
+        collectionView?.allowsMultipleSelection = true
         
-        let name: String = ""
-        guard let image = UIImage(named: name) else { fatalError("Image array failed to load") }
+    }
+    let targetDimension: CGFloat = 320
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {fatalError("unable to retrieve layout")}
         
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewController.reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        let insetAmount: CGFloat = 32
+        layout.minimumLineSpacing = .greatestFiniteMagnitude
+        layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return images.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewController.reuseIdentifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewController.reuseIdentifier, for: indexPath) as? CollectionViewCell else { fatalError("Unable to load cell") }
     
-        // Configure the cell
+        cell.imageView.image = images[indexPath.row]
     
         return cell
     }
@@ -91,5 +75,5 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     }
     */
-
+    
 }
