@@ -10,6 +10,7 @@ import UIKit
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var images: [UIImage] = []
+    let reuseIdentifier = "cell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         }
     }
     
+    //Set the size of the cells
     let targetDimension: CGFloat = 320
     let insetAmount: CGFloat = 32
     
@@ -44,11 +46,16 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         return images.count
     }
     
+    //Dequeue the cells
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //Get the image for the cell row
-        let cellImage = images[indexPath.row]
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell
+            else { fatalError("Unable to dequeue cell") }
         
+        //Populate the cell with the image for the row
+        cell.imageView.image = images[indexPath.row]
         
+        //return the cell
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
