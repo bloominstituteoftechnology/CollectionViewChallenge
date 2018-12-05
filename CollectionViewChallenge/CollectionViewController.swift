@@ -53,14 +53,16 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         let scale = targetDimension / maxDimension
         return CGSize(width: image.size.width * scale, height: image.size.height * scale)
     }
-//
-//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
-//        cell.layer.borderWidth = 1
-//        cell.layer.borderColor = .
-//    }
 
-
-  
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.yellow.cgColor
+    }
     
+    override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.black.cgColor
+    }
 }
