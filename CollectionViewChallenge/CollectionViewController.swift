@@ -3,6 +3,14 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
+    
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
