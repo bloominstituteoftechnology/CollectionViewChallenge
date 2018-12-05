@@ -14,17 +14,20 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         }
     }
     
+    let targetDimension: CGFloat = 320
+    let insetAmount: CGFloat = 32
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { fatalError("Unable to retrieve layout") }
+        
+        layout.sectionInset = UIEdgeInsets(top: insetAmount, left: insetAmount, bottom: insetAmount, right: insetAmount)
+        layout.minimumLineSpacing = .greatestFiniteMagnitude
+        layout.scrollDirection = .horizontal
    
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-  
-
     }
-
+    
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
