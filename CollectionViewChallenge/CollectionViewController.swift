@@ -8,7 +8,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         for counter in 1...12 {
             let name = "Image\(counter)"
-            guard let image =  UIImage(named: name) else { return }
+            guard let image = UIImage(named: name) else { return }
             images.append(image)
             
         }
@@ -29,14 +29,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     }
     
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
+   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+ 
         return images.count
     }
 
@@ -45,6 +39,21 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         cell.imageView.image = images[indexPath.row]
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        // Fetch image
+        let image = images[indexPath.row]
+        
+        // Fetch largest dimension of the image, whether width or height
+        let maxDimension = max(image.size.width, image.size.height)
+        
+        // Calculate how to scale that largest dimension into `targetDimension`
+        let scale = targetDimension / maxDimension
+        
+        // Return scaled dimensions
+        return CGSize(width: image.size.width * scale, height: image.size.height * scale)
     }
 
 }
