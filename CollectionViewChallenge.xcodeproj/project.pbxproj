@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278AF20721B898B300626E29 /* MorePaintings.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278AF20621B898B300626E29 /* MorePaintings.xcassets */; };
 		27DB461921B86D0300A14686 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DB461821B86D0300A14686 /* CollectionViewController.swift */; };
 		27DB461B21B86D1D00A14686 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DB461A21B86D1D00A14686 /* CollectionViewCell.swift */; };
 		27DB461D21B86D3400A14686 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DB461C21B86D3400A14686 /* CollectionViewCell.xib */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		278AF20621B898B300626E29 /* MorePaintings.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MorePaintings.xcassets; sourceTree = "<group>"; };
 		27DB461821B86D0300A14686 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		27DB461A21B86D1D00A14686 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		27DB461C21B86D3400A14686 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				8EA6BDD02174E38A0071AF47 /* Main.storyboard */,
 				8EA6BDD32174E38B0071AF47 /* Assets.xcassets */,
 				8EA6BDDE2174E39D0071AF47 /* PaintingAssets.xcassets */,
+				278AF20621B898B300626E29 /* MorePaintings.xcassets */,
 				27DB461821B86D0300A14686 /* CollectionViewController.swift */,
 				27DB461A21B86D1D00A14686 /* CollectionViewCell.swift */,
 				27DB461C21B86D3400A14686 /* CollectionViewCell.xib */,
@@ -138,6 +141,7 @@
 				8EA6BDD42174E38B0071AF47 /* Assets.xcassets in Resources */,
 				27DB461D21B86D3400A14686 /* CollectionViewCell.xib in Resources */,
 				8EA6BDE22174E3A90071AF47 /* LambdaLogoAssets.xcassets in Resources */,
+				278AF20721B898B300626E29 /* MorePaintings.xcassets in Resources */,
 				8EA6BDE32174E3A90071AF47 /* LaunchScreen.storyboard in Resources */,
 				8EA6BDD22174E38A0071AF47 /* Main.storyboard in Resources */,
 			);

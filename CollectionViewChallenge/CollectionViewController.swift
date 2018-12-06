@@ -6,7 +6,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for counter in 1...12 {
+        for counter in 1...16 {
             let name = "Image\(counter)"
             guard let image = UIImage(named: name) else { return }
             images.append(image)
